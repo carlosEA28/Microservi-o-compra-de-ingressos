@@ -20,7 +20,7 @@ public class IventoryController {
     @Autowired
     private InventoryService inventoryService;
 
-    @GetMapping("inventory/events")
+    @GetMapping("/inventory/events")
     public ResponseEntity<List<EventInventoryResponse>> inventoryGetAllEvents() {
         var events = inventoryService.getAllEvents();
 
